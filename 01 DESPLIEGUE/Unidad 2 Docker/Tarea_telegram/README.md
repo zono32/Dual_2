@@ -1,8 +1,7 @@
 version: '3'
 services:
   backend:
-    build:
-      context: ./back
+    image: zono32/back-telegram:latest
     ports:
       - "8001:8001"
     environment:
@@ -10,7 +9,6 @@ services:
       - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
 
   frontend:
-    build:
-      context: ./front
+   image: zono32/front-telegram:latest
     ports:
       - "8080:80"
