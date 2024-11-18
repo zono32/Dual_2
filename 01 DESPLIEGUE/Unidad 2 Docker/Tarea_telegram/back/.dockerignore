@@ -1,6 +1,11 @@
 # Ignorar directorios de Python
-__pycache__/
+__pycache__
 *.pyc
+*.pyo
+*.pyd
+.env
+.git
+
 
 # Ignorar entornos virtuales locales
 .venv/

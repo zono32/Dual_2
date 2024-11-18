@@ -8,7 +8,7 @@
           <element name="reparto">
               <complexType>
                  <sequence>
-                   <element name="interprete" maxOccurs="unbounded"/><!--número de secuencias indeterminadas -->
+                  <element name="interprete" maxOccurs="unbounded"/>
                  </sequence> 
               </complexType>
           </element> 
