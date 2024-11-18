@@ -1,16 +1,18 @@
-version: '3'
+
 services:
   backend:
-    build:
-      context: ./back
-    ports:
+   image: zono32/back-telegram
+   container_name: back
+   ports:
       - "8001:8001"
-    environment:
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+   environment:
+    - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+    - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
 
   frontend:
-    build:
-      context: ./front
-    ports:
-      - "8080:80"
+   image: zono32/front-telegram
+   container_name: front
+   depends_on: 
+    - backend
+   ports:
+    - 8080:80

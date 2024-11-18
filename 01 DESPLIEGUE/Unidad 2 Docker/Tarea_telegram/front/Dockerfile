@@ -1,9 +1,11 @@
-# Usar una imagen oficial de Nginx
+# Usar una imagen base de Nginx
 FROM nginx:alpine
 
-# Copiar los archivos del frontend (HTML, CSS, JS) a la carpeta de Nginx
-COPY . /usr/share/nginx/html
+# Copiar el archivo HTML y el script JavaScript al directorio de Nginx
+COPY .  /usr/share/nginx/html
 
-
-# Exponer el puerto en el que Nginx estará sirviendo los archivos
+# Exponer el puerto 80
 EXPOSE 80
+
+# Comando por defecto para ejecutar Nginx
+CMD ["nginx", "-g", "daemon off;"]
