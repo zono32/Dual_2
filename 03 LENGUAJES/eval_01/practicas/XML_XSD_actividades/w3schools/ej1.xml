@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Ciclo familia="IFC" tipo="CS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Nome>Administración de Sistemas Informáticos</Nome>
+<Modulo>Redes de Area Local</Modulo>
+<Modulo>Sistemas Informáticos Monousuario e Multiusuario</Modulo>
+<Modulo>Sistemas Xestores de Bases de Datos</Modulo>
+</Ciclo>
