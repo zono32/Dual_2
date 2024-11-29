@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install httpx fastapi pytest ruff
 
-      # Ejecutar Pytest
+      # Ejecutar Pytest (buscando en test/)
       - name: Run Pytest
         run: pytest test/
 
