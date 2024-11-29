@@ -26,11 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install httpx fastapi pytest ruff
 
-      # Listar archivos en test/
-      - name: List files in test directory
-        run: ls -R test/
-
-      # Ejecutar Pytest
+      # Ejecutar Pytest (buscando en test/)
       - name: Run Pytest
         run: pytest test/
 
@@ -60,7 +56,7 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-app:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
 
-  # Job 3: Build y Push a GitHub Container Registry
+  # Job 3: Build y Push a GitHub Actions
   github-container-registry:
     needs: test-and-lint
     runs-on: ubuntu-latest
