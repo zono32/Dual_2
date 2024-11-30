@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <xs:element name="garderia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="neno" minOccurs="1" maxOccurs="50"
+          type="tipoNeno" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="tipoNeno">
+    <xs:sequence>
+      <xs:element name="nome" type="xs:string" />
+      <xs:element name="dataNacemento" type="xs:date" />
+      <xs:simpleType name="tipoTelefono"><xs:restriction base="xs:string"><xs:pattern value="([0-9]{3})\s[0-9][0-9]-[0-9][0-9]-[0-9][0-9]"/></xs:restriction></xs:simpleType>
+
+      <xs:element name="peso" type="xs:decimal" />
+      <xs:element name="altura" type="xs:unsignedByte" />
+      <xs:element name="vacunas" type="xs:boolean" />
+    </xs:sequence>
+    <xs:attribute name="numeroExpedente" type="xs:unsignedShort" />
+  </xs:complexType>
+</xs:schema>
+                    
