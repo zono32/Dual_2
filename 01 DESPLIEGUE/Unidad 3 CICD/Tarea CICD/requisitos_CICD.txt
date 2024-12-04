@@ -20,4 +20,4 @@ En esta tarea se pide lo siguiente:
 Recuerda que para buildear y pushear te hará falta estar autenticado en GitHub o DockerHub, y necesitarás añadir variables y secrets al proyecto en GitHub.
 		
 
-Para la entrega, déjame tu repo y el id de tu último commit.
+Para la entrega, déjame tu repo y el id de tu último commit.    902bfce409cfe650ee8771d7fd132bf034385b69     https://github.com/zono32/back-calculadora.git
