@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="py-3 bg-dark text-white text-center">
+        <h2>Plataforma de Mensajería</h2>
+    </header>
+    <div class="container">
+        <h1>Enviar Mensaje</h1>
+        <form id="reclamacionForm">
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <input type="text" class="form-control" id="message" placeholder="Escribe tu mensaje aquí..." required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        &copy; <span id="year"></span> Plataforma de Mensajería
+    </footer>
+
+    <script>
+
+        const yearToday = new Date().getFullYear();
+        document.getElementById('year').textContent = yearToday;
+
+        document.getElementById('reclamacionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const message = document.getElementById('message').value;
+
+            fetch('http://localhost:8001/message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message }),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                alert('mensaje enviado!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Error al enviar el mensaje');
+            });
+        });
+
+        
+     
+    </script>
+</body>
+</html>
