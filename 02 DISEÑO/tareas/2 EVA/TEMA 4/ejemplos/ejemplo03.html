@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de selectores basados en clases</title>
+    <style>
+        /*clases asociadas a etuquitas h1*/
+        h1.roja{
+            color: red;
+        }
+        h1.verde{
+            color: green;
+        }
+        h1.azul{
+            color: blue;
+        }
+        /*clase genérica*/
+        .amarilla{
+            color: yellow;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Clases específicas para h1-->
+     <h1 class="roja">Un encabezado h1 rojo</h1>
+     <h1 class="verde">Un encabezado h1 verde</h1>
+     <h1 class="azul">Un encabezado h1 azul</h1>
+     <!--El estilo no se aplica al elemento h2-->
+     <h2 class="roja"> Un encabezado h2 rojo no aplicado </h2>
+     <!--El estilo de la clase genérica se aplica a cualquier elemento-->
+     <h2 class="amarilla">Un encabezado h2 amarillo</h2>
+     <h1 class="amarilla">Un encabezado h1 amarillo</h1>
+     <p class="amarilla">Un párrafo amarillo</p>
+     <div class="amarilla">Un texto amarillo en un contenedor</div>
+     <!--texto parcialmente estilizado-->
+     <p>Este es un texto <span class="amarilla">parcialmente amarillo</span>usando span</p>
+     <!--Clases combinadas: se prioriza el estilo específico sobre el genérico-->
+     <h1 class="roja amarilla" >Un encabezado h1 rojo y amarillo</h1>
+</body>
+</html>
