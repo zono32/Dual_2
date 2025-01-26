@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio flex</title>
+    <style>
+        #cabecera {
+            background-color: #CCCCCC;
+            padding: 10px;
+            border: 5px solid #B3DBC1 ;
+            margin-bottom: 20px;
+        }
+        #contenido {
+            display: flex;
+            flex-direction: row;
+            background-color: #95EEF8;
+            padding: 10px;
+            border: 5px solid #B3DBC1 ;
+        }
+        .columna-izquierda {
+            flex: 1;
+            background-color: #F8D7A2;
+            padding: 10px;
+            border: 5px solid #B3DBC1 ;
+        }
+        .columna-derecha {
+            flex: 3;
+            background-color: #F8D7A2;
+            padding: 10px;
+            border: 5px solid #B3DBC1;
+            margin-left: 10px;
+        }
+        #piepagina {
+            background-color:#95FAC6;
+            padding: 2px;
+            border: 5px solid #B3DBC1 ;
+            margin-top: 20px;
+        }
+        .rojo{
+            color: red;
+        }
+        .negrita{
+            font-weight: bold;
+        }
+        .cursiva{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecera"> <h1 class="titulo-cabecera">Ejemplo con Dos Columnas</h1><p class="texto-cabecera">Esta es la cabecera del documento. Contiene el título principal y una breve descripción.</p> </div>
+    <div id="contenido">
+        <div class="columna-izquierda">
+            <h3 class="titulo-col-izq">Columna Izquierda</h3>            
+            <div>
+                <ul>
+                    <li class="elemento1 negrita"> Elemento 1 en negrita</li>
+                    <li class="elemento2 rojo"> Elemento 2 en rojo</li>
+                    <li class="elemento1 negrita rojo"> Elemento 3 en rojo y negrita</li>
+                </ul>
+            </div>
+        </div>
+        <div class="columna-derecha">
+            <h4 class="titulo-col-der" >Columna Derecha</h4>
+            <p class="parrafo1 cursiva"> Este es un párrafo con texto en  cursiva Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, delectus nulla, consequatur libero iure labore, repellendus commodi tempore nemo voluptatem perferendis dolores laborum ex inventore earum tenetur blanditiis sed! Tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dicta exercitationem ullam aliquam rem assumenda ipsam expedita, porro voluptatem dignissimos? Necessitatibus libero assumenda deleniti veritatis vero et pariatur sit! Alias?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, odit. Expedita vero libero, incidunt inventore ratione magnam natus soluta fuga impedit recusandae rerum debitis dignissimos error consequatur molestias porro cumque?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, delectus nulla, consequatur libero iure labore, repellendus commodi tempore nemo voluptatem perferendis dolores laborum ex inventore earum tenetur blanditiis sed! Tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dicta exercitationem ullam aliquam rem assumenda ipsam expedita, porro voluptatem dignissimos? Necessitatibus libero assumenda deleniti veritatis vero et pariatur sit! Alias?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, odit. Expedita vero libero, incidunt inventore ratione magnam natus soluta fuga impedit recusandae rerum debitis dignissimos error consequatur molestias porro cumque?</p>
+            <p class="parrafo2 cursiva" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, delectus nulla, consequatur libero iure labore, repellendus commodi tempore nemo voluptatem perferendis dolores laborum ex inventore earum tenetur blanditiis sed! Tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dicta exercitationem ullam aliquam rem assumenda ipsam expedita, porro voluptatem dignissimos? Necessitatibus libero assumenda deleniti veritatis vero et pariatur sit! Alias?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, odit. Expedita vero libero, incidunt inventore ratione magnam natus soluta fuga impedit recusandae rerum debitis dignissimos error consequatur molestias porro cumque?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, delectus nulla, consequatur libero iure labore, repellendus commodi tempore nemo voluptatem perferendis dolores laborum ex inventore earum tenetur blanditiis sed! Tempora.</p>
+            <p class="parrafo3 cursiva rojo">Este es un párrafo con texto rojo en cursiva. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint assumenda quo saepe sit odit, laboriosam molestiae officia debitis delectus ipsa aliquam sunt eveniet nisi. Accusantium labore quas illo nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto enim assumenda optio molestias iure est in architecto? Eum debitis distinctio vero dolorum cum est alias, commodi minus in repudiandae.</p>
+            <p class="parrafo4 cursiva"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui cupiditate dolorem! Maxime inventore reiciendis ullam delectus nihil eveniet amet est alias culpa tenetur deleniti consequuntur, quasi nobis ad corporis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae molestias recusandae omnis, minima, reiciendis odio voluptatem cumque autem vel iusto a placeat magni natus! Hic inventore in consequatur aut reiciendis?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus dolorem nemo dignissimos recusandae atque, odit incidunt fugit perferendis minus accusamus temporibus numquam quo adipisci officiis! Qui illo maxime quaerat?</p>
+            <p class="parrafo5 cursiva"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui cupiditate dolorem! Maxime inventore reiciendis ullam delectus nihil eveniet amet est alias culpa tenetur deleniti consequuntur, quasi nobis ad corporis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae molestias recusandae omnis, minima, reiciendis odio voluptatem cumque autem vel iusto a placeat magni natus! Hic inventore in consequatur aut reiciendis?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus dolorem nemo dignissimos recusandae atque, odit incidunt fugit perferendis minus accusamus temporibus numquam quo adipisci officiis! Qui illo maxime quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ducimus quibusdam aut natus! Mollitia dolore adipisci vel praesentium corporis doloremque nemo molestiae delectus ut, voluptates iure vero, vitae in non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat error deserunt aliquam. Animi tempore facere provident impedit consequuntur ducimus magnam explicabo? Laboriosam facilis veritatis iure quis repellendus, quo iste.</p>
+        </div>
+    </div>
+    <div id="piepagina">
+        <p>Aquí está el pie de página. <a href="#cabecera">Ir ala cabecera</a></p>
+    </div>
+</body>
+</html>
