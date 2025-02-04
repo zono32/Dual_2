@@ -35,10 +35,26 @@ count(//disco[@tecnoloxía='SCSI'])
 //máquina/hardware[memoria/@tecnoloxía='DDR2' and memoria=number('4')]/fabricante
 
 7. O sistema operativo das máquinas nas que figure o número de núcleos do procesador.
-(//máquina[hardware/procesador/@num_nucleos]/config/OS
+//máquina[hardware/procesador/@num_nucleos]/config/OS
+no es equivalente a poner:
+//máquina[//@num_nucleos]/config/OS
+por la razón explicada en el punto 8.
 
 8. Os nomes das máquinas que empreguen memoria con tecnoloxía "DDR2".
-//máquina[hardware/memoria/@tecnoloxía='DDR2']/@nome
+a) //máquina[hardware/memoria/@tecnoloxía='DDR2']/@nome
+b) //máquina[descendant::memoria/@tecnoloxía='DDR2']/@nome
+c) //máquina[//memoria/@tecnoloxía='DDR2']/@nome
+esta última devuelve todas las máquinas.
+Es equivalente a poner:
+c) //máquina[/equipos/máquina/hardware/memoria/@tecnoloxía='DDR2']/@nome
+
+la opción c, cambia el contexto del predicado, localizando
+en todo el documento, desde raíz, nodos que cumplan con
+el predicado. Si encuentra, al menos uno, el predicado pasa
+a ser cierto, a cumplirse, por lo que devuelve el nombre de 
+esa máquina, y así con todos los elementos máquina.
+
+
 
 9. As máquinas con procesador da marca "Intel" e gravadora de DVD.
 //máquina[hardware/procesador/@marca="Intel"][hardware/gravadora/@tipo="DVD"]
