@@ -1,0 +1,35 @@
+name: Exam-recu-DAW
+on: push
+jobs:
+    nombres:
+      runs-on: ubuntu-latest
+      steps:
+         - 
+           name: nombre de usuario
+           run: echo ${{github.actor}}
+         - 
+            name: nombre repositorio
+            run: echo ${{github.repository}}
+         - 
+            name: nombre rama
+            run: echo ${{github.ref_name}}
+        
+    build-y-push:
+        runs-on: ubuntu-latest
+        steps:
+            -
+             name: Copiar código
+             uses: actions/checkout@v4
+            - 
+             name: Login en Docker Hub
+             uses: docker/login-action@v3
+             with:
+               username: ${{ secrets.dockuser }}
+               password: ${{ secrets.DOCKTOKEN}}
+            -
+             name: Build y push 
+             uses: docker/build-push-action@v6
+             with:
+               push: true
+               tags: zono32/examen-front:latest
+               
