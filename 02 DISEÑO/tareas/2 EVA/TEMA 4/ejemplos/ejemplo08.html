@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Modelo de cajas</title>
+    <title>Ejemplo de Modelo de Cajas</title>
     <style>
         body{
-            display: flex;
+            display:flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -14,20 +14,21 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: goldenrod;
         }
-
         .contenedor{
             width: 80%;
-            max-width:600px;
+            max-width: 600px;
             background-color: whitesmoke;
-            border: 3px solid  darkblue;
+            border: 3px solid darkblue;
             border-radius: 15px;
             padding: 20px;
-            box-shadow: 4px 4px 10px gray ;
+            box-shadow: 4px 4px 10px gray;
         }
+        /* Título */
         .contenedor h1{
             text-align: center;
             color: darkblue;
         }
+        /* Caja interna */
         .caja{
             position: relative;
             background-color: lightcyan;
@@ -37,6 +38,7 @@
             width: 80%;
             max-width: 400px;
         }
+
         .caja:last-of-type{
             border: 5px double orange;
             width: 60%;
@@ -44,15 +46,15 @@
         }
         .caja:first-of-type span{
             position: absolute;
-            top:-15px;
+            top: -15px;
             right: 10px;
             background-color: darkorange;
-            color: whitesmoke;
+            color:whitesmoke;
             padding: 5px 10px;
             border-radius: 10px;
             font-size: 12px;
             font-weight: bold;
-        } 
+        }
         .caja:last-of-type span{
             position: absolute;
             bottom: 10px;
@@ -63,19 +65,15 @@
 </head>
 <body>
     <div class="contenedor">
-<h1>
-   Ejemplo de Modelo de cajas 
-</h1>
-<p class="caja">
-    <span>Etiqueta</span>
-    Este es un ejemplo de como se aplican los atributos del modelo de cajas:
-    unidades de medida, márgenes, padding y bordes.
-</p>
-<p class="caja">
-    <span>🤖</span>
-    Este es un ejemplo de como se aplican los atributos del modelo de cajas:
-    unidades de medida, márgenes, padding y bordes.
-</p>
+        <h1>Ejemplo de Modelo de Cajas</h1>
+        <div class="caja">
+            <span>Etiqueta</span>
+            Este es un ejemplo de cómo se aplican los atributos del modelo de cajas: unidades de medida, márgenes, padding y bordes.
+        </div>
+        <div class="caja">
+            <span>🤖</span>
+            Este es un ejemplo de cómo se aplican los atributos del modelo de cajas: unidades de medida, márgenes, padding y bordes.
+        </div>
     </div>
 </body>
 </html>

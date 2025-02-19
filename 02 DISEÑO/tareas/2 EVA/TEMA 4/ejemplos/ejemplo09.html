@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,64 +12,47 @@
             flex-wrap: wrap;
             align-items: center;
         }
-        .emoji-diamante{
-            width: 150px;
-            height: 150px;           
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: pink;
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        }
-        
         .emoji-especial{
             width: 150px;
             height: 150px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            /*clip-path: url(./assets/asset.svg)*/
-            mask-image: url(./assets/asset.svg);
-            mask-size: 100%;mask-repeat: no-repeat;
+            align-items: center;
             background-color: red;
+            /* clip-path: url(assets/forma.svg); */
+            mask-image: url(assets/forma.svg);
+            mask-size: 100%;
+            mask-repeat: no-repeat;
             margin: 20px;
         }
-        .emoji-elipse{
+        .emoji-especial2{
             width: 150px;
             height: 150px;
-            background-color: pink;
             display: flex;
-            align-items: center;
             justify-content: center;
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            align-items: center;
+            background-color: red;
+            /* clip-path: url(assets/forma.svg); */
+            mask-image: url(assets/forma2.svg);
+            mask-size: 100%;
+            mask-repeat: no-repeat;
+            margin: 20px;
         }
-        .emoji-circulo{
+        .emoji-diamante{
             width: 150px;
             height: 150px;
-            background-color: pink;
             display: flex;
-            align-items: center;
             justify-content: center;
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        }
-        .emoji-trapecio{
-            width: 150px;
-            height: 150px;
+            align-items: center;
             background-color: pink;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="emoji-diamante">
-        😀
-    </div>
-    <div class="emoji-especial">
-        😀
-    </div>
-    
+    <div class="emoji-diamante">😀</div>
+    <div class="emoji-especial">😀</div>
+    <div class="emoji-especial2">😀</div>
 </body>
 </html>
