@@ -1,9 +1,14 @@
-
-  
-  
-  Produto da familia LACT con código 093 para o cliente de código CL09384
-  Produto da familia LACT con código 012 para o cliente de código CL09384
-  Produto da familia ACEI con código 015 para o cliente de código CL09384
-  Produto da familia AUGA con código 005 para o cliente de código CL09384
-  Produto da familia CONS con código 121 para o cliente de código CL09384
-  
+<?xml version="1.0" encoding="UTF-8"?>
+   PC Sobremesa
+   Dell
+   i7
+   8
+   <disco tecnoloxía="SATA" capacidade="2000" máquina=""/>
+   Windows 7
+   192.168.20.105
+   192.168.20.1
+ <discos>
+   <disco tecnoloxía="SCSI" capacidade="200" máquina=""/>
+   <disco tecnoloxía="SCSI" capacidade="200" máquina=""/>
+   <disco tecnoloxía="SCSI" capacidade="200" máquina=""/>
+</discos>

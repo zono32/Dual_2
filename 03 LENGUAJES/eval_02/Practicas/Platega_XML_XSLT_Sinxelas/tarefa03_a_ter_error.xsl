@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output encoding="UTF-8" indent="yes" method="xml"/>
-    <xsl:template match="máquina[@nome='GALILEO']">
+    <xsl:template match="equipos">
        <discos>
-         <xsl:apply-templates select="descendant::disco"/>
+         <xsl:apply-templates select="disco"/>
        </discos>
     </xsl:template>
     <xsl:template match="disco">
@@ -15,7 +15,7 @@
              <xsl:value-of select="@capacidade" />
           </xsl:attribute>
           <xsl:attribute name="máquina">
-             <xsl:value-of select="../@nome" />
+             <xsl:value-of select="../../@nome" />
           </xsl:attribute>
        </xsl:element>
     </xsl:template>
