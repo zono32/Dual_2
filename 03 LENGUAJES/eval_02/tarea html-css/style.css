@@ -1,0 +1,18 @@
+body{
+    all:unset
+}
+
+.header-container{
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.app-nav ul{
+    list-style: none;
+}
+.app-nav{
+    display: flex;
+}
+

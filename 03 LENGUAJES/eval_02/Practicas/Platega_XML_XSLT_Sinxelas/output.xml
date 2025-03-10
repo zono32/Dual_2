@@ -1,26 +1,11 @@
-<!DOCTYPE HTML><html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Táboa máquinas</title>
-   </head>
-   <body>
-      <h1>Táboa das máquinas</h1>
-      <table border="1">
-         <tr>
-            <th>Máquina</th>
-            <th>Procesador</th>
-            <th>Memoria</th>
-         </tr>
-         <tr>
-            <td>PC017</td>
-            <td>Intel-i7</td>
-            <td>8GB DDR3</td>
-         </tr>
-         <tr>
-            <td>GALILEO</td>
-            <td>Intel-Xeon</td>
-            <td>2GB DDR2</td>
-         </tr>
-      </table>
-   </body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<máquinas>
+   <máquina tipo="PC Sobremesa"
+             fabricante="Dell"
+             procesador="Intel 4 núcleos a 3,1 GHz"
+             discos="1 con 2000GB"/>
+   <máquina tipo="Torre"
+             fabricante="Fujitsu-Siemens"
+             procesador="Intel 4 núcleos a 3 GHz"
+             discos="3 con 600GB"/>
+</máquinas>
