@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados</title>
+    <style>
+        /* Selectores de atributos */
+        a[href$=".rar"] {
+            color: orange;
+            text-decoration: underline;
+        }
+        a[href$=".rar"]::before {
+            content: "\1F48A "; /* Icono 💊 */
+        }
+
+        a[href^="https://"] {
+            color: green;
+        }
+        a[href^="https://"]::after {
+            content: " \1F517"; /* Icono 🔗 */
+        }
+
+        /* Selectores jerárquicos */
+        ul > li {
+            list-style: none;
+        }
+
+        tr > td {
+            background-color: #f9f9a1; /* Amarillo claro */
+        }
+
+        /* Pseudo-clases */
+        ul > li:first-child {
+            color: blue;
+            font-weight: bold;
+        }
+
+        ul > li:nth-child(odd) {
+            background-color: #d4f4d4; /* Verde claro */
+        }
+
+        ul > li:nth-child(even) {
+            background-color: #e0e0e0; /* Gris claro */
+        }
+
+        input[type="text"]:focus {
+            border: 5px solid red;
+        }
+
+        /* Pseudo-elementos */
+        h1::before, h2::before {
+            content: "* ";
+            color: green;
+        }
+
+        input[type="text"]::after {
+            content: "";
+        }
+
+        input[type="text"] + span {
+            color: red;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tarea selectores</h1>
+    <h2>selectores avanzados</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nulla laborum eius provident nam earum quidem praesentium. Aperiam, animi delectus culpa aut quasi velit minus nihil exercitationem aspernatur vero totam?</p>
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <a href="archivo.rar">Descargar archivo RAR</a><br>
+    <a href="https://www.google.com">Ir a Google</a>
+
+    <table border="1">
+        <tr>
+            <td>Fila 1, Columna 1</td>
+            <td>Fila 1, Columna 2</td>
+            <td>Fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2, Columna 1</td>
+            <td>Fila 2, Columna 2</td>
+            <td>Fila 2, Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 3, Columna 1</td>
+            <td>Fila 3, Columna 2</td>
+            <td>Fila 3, Columna 3</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="campo-texto">Campo de texto:</label>
+        <input type="text" name="campo-texto" id="campo-texto">
+        <span>Campo obligatorio</span></br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Tarea 4.7</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            font-size: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .emoji-especial{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            /* clip-path: url(assets/forma.svg); */
+            mask-image: url(assets/forma.svg);
+            mask-size: 100%;
+            mask-repeat: no-repeat;
+            margin: 20px;
+        }
+        .emoji-especial2{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            /* clip-path: url(assets/forma.svg); */
+            mask-image: url(assets/forma2.svg);
+            mask-size: 100%;
+            mask-repeat: no-repeat;
+            margin: 20px;
+        }
+        .emoji-diamante{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji-diamante">😀</div>
+    <div class="emoji-especial">😀</div>
+    <div class="emoji-especial2">😀</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo07 - Medios de presentación</title>
+    <style>
+        @font-face{
+            font-family: 'Playwrite';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            font-display: swap;
+            unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+            src: local()
+            url('fonts/PlaywriteHUGuides-Regular.ttf')
+        }
+        body{
+            font-family: 'Playwrite', 'Open Sans', Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: lightskyblue;
+        }
+        .no-imprimir{
+            color: red;
+        }
+
+        /* Estilos de impresión */
+        @media print {
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: black;
+            }
+            .no-imprimir{
+                display: none;
+            }
+
+        }
+        @page{
+            size: A4 landscape;
+            margin: 25mm;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de impresión</h1>
+    <p>
+        Este es un ejemplo de cómo se utiliza la regla @page y @media print en CSS para personalizar el diseño de las páginas impresas. Puedes ajustar los márgenes, la orientación y otras propiedades específicas para optimizar la presentación de los documentos impresos.
+    </p>
+    <p class="no-imprimir">Este texto no se imprimirá</p>
+</body>
+</html>
