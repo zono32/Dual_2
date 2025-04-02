@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: face;
+    src: url(./Gruppo-Regular.ttf);
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+body{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tarjeta-content{
+    width: 400px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: lightseagreen ;
+    font-family: 'face', Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.cabecera-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: white;
+    padding: 20px;
+}
+.nombre-banco{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.button-cerrar{
+    background-color: aliceblue;
+    color: lightseagreen ;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button-cerrar:hover{
+    background-color: #ccc;
+}
+
+.cuerpo-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid seagreen;
+    margin-bottom: 2px;
+}
+.img-content{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+}
+.text-numero{
+    flex:3;
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+}
+img{
+    border-radius: 8px;
+    width: 55px;
+    height: 40px;
+}
+
+.pie-content{
+    border-top: 2px solid seagreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.pie-button{
+    background-color: seagreen;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.pie-button:hover{
+    background-color: rgb(36, 106, 66);
+
+}
+.pie-content :last-child{
+    background-color: goldenrod ;
+}
+.pie-content :last-child:hover{
+    background-color: darkgoldenrod;
+}
