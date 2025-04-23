@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,23 +14,63 @@ body {
     background-color: #f0f9f9;
     color: #333;
   }
-  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    height: 100px;
+    background-color: #006666;
+    color: white;
+    background-image: url("./imagenes/puente_romano_1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2em 1em;
+  }
   header, footer {
     background-color: #006666;
     color: white;
     text-align: center;
     padding: 1em;
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .escudo-header{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 8%;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1); /* sombra muy intensa */
+  }
+  
   
   nav a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 8px;
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
   }
   
   nav a:hover {
     text-decoration: underline;
   }
+  
   
   section {
     padding: 1em 2em;
@@ -37,28 +85,67 @@ body {
     max-width: 500px;
     margin: 0 auto;
     background-color: #e0f7f7;
-    padding: 1em;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
   
-  input, textarea, button {
+  .formulario label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
     width: 100%;
+    box-sizing: border-box;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #aaa;
     border-radius: 5px;
+    font-size: 1rem;
   }
   
-  button {
+  .formulario button {
     background-color: #006666;
     color: white;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  .formulario button:hover {
     background-color: #004d4d;
   }
   
+ 
+  .preview-container {
+    aspect-ratio: 10/16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+  }
+  .preview-container img {
+    width: 100%;
+   left: 0;
+   position: sticky;
+   object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  .localizacion{
+    margin-bottom: 200px;
+  }
+ 
