@@ -3,29 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <title>Historia de Caldas de Reis</title>
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
-<body>
+<body> 
+
+  <!-- ======= Header: Escudo + Título + Menú ======= -->
   <header>
-    <img class="escudo-header" src="./assets/imagenes/Caldas_de_Reis.svg" alt="escudo de Caldas de Reis" />
-    <h1>Caldas de Reis</h1>
+    <div class="header-top">
+      <!-- Escudo -->
+      <img class="escudo-header" src="./assets/imagenes/Caldas_de_Reis.svg" alt="Escudo de Caldas de Reis" />
+      
+      <!-- Título principal -->
+      <h1>Caldas de Reis</h1>
+    </div>
+
+    <!-- Navegación principal -->
     <nav>
       <a href="index.html">Inicio</a>
       <a href="historia.html">Historia</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+    
   </header>
 
+  <!-- ======= Contenido principal ======= -->
   <main>
-    <section>
+
+    <!-- Sección: Introducción histórica -->
+    <section  class="zona-historia-parrafo">
       <h2>Un pasado lleno de historia</h2>
       <p>Caldas de Reis es una pequeña villa pontevedresa intensamente vinculada al Camino Portugués. Fundada como Aquis Celenis por los romanos, posee una larga historia, siendo testigo de importantes acontecimientos. Y es que aquí nació por ejemplo el futuro rey Alfonso VII de León, hijo de la reina Doña Urraca, honor por el cual la villa cambió su nombre. Además, Caldas de Reis cuenta con alguno de los balnearios termales más importantes de Galicia, cuyas templadas aguas presumen de tener propiedades curativas.
-
+    
         Además del núcleo urbano, con un importante patrimonio histórico y cultural, el término municipal de Caldas de Reis ofrece idílicos paisajes rurales donde notables construcciones románicas se entremezclan con grandes fincas de viñedos de albariño. Pero además de por su gran belleza, esta localidad destaca por que se han encontrado signos de presencia humana desde la prehistoria, como el valioso «Tesoro de Caldas de Reis», un conjunto de más de treinta piezas de oro del año 1550 a.C., declarado la mayor acumulación conocida de oro de toda la Prehistoria europea.  </p>
      
     </section>
 
-    <section>
+    <!-- Sección: Tabla de lugares históricos -->
+    <section class="zona-historia">
       <h3>Lugares históricos</h3>
       <table>
         <thead>
@@ -51,13 +65,17 @@
       </table>
     </section>
 
-    <section>
-      <img src="img/puente_romano.jpg" alt="Puente romano en Caldas de Reis">
+    <!-- Sección: Imagen representativa -->
+    <section class="zona-historia">
+      <img src="./assets/imagenes/puente_bermaña.jpg" alt="Puente romano en Caldas de Reis" />
     </section>
+
   </main>
 
+  <!-- ======= Footer ======= -->
   <footer>
     <p>&copy; 2025 Turismo Caldas de Reis</p>
   </footer>
+
 </body>
 </html>
