@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mundo Musical</title>
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <h1>🎵 Mundo Musical – Escucha antes de comprar.</h1>
+  <header>
+    <h1>🎵 Mundo Musical – Escucha antes de comprar</h1>
+  </header>
 
-    <div class="instrumento-piano">
-        <img class="piano" src="./assets/instrumentos/piano-6543855_640.webp" alt="">
-        <h2>🎹 Piano</h2>
-        <p>El piano es un instrumento musical de cuerda percutida que se toca mediante un teclado. Es uno de los instrumentos más populares y versátiles en la música clásica, jazz, pop y muchos otros géneros.</p>
-        <p>Haz click en el boton de reprodución para escuchar el audio:</p>
-        <audio controls preload="none"> <source src="./media/187882__sonsdebarcelona__piano-nuevo.wav"></audio>
+  <main class="instrumentos">
+    <div class="card">
+      <img src="./assets/instrumentos/piano-6543855_640.webp" alt="Piano" />
+      <h2>🎹 Piano</h2>
+      <p>Instrumento de cuerda percutida con teclado. Ideal para música clásica, jazz y pop.</p>
+      <audio controls preload="none">
+        <source src="./media/soft-piano-100-bpm-121529.mp3" type="audio/wav" />
+        Tu navegador no soporta el audio.
+      </audio>
     </div>
-    
+
+    <div class="card">
+      <img src="./assets/instrumentos/guitarrra.jpg" alt="Guitarra" />
+      <h2>🎸 Guitarra</h2>
+      <p>Instrumento de cuerda pulsada muy utilizado en géneros como flamenco, rock y folk.</p>
+      <audio controls preload="none">
+        <source src="./media/relaxing-guitar-loop-v5-245859.mp3" type="audio/mp3" />
+        Tu navegador no soporta el audio.
+      </audio>
+    </div>
+
+    <div class="card">
+      <img src="./assets/instrumentos/Violín-2.jpg" alt="Violín" />
+      <h2>🎻 Violín</h2>
+      <p>Instrumento de cuerda frotada con un sonido agudo y expresivo. Muy presente en orquestas.</p>
+      <audio controls preload="none">
+        <source src="./media/violin-music-64019.mp3" type="audio/mp3" />
+        Tu navegador no soporta el audio.
+      </audio>
+    </div>
+  </main>
 </body>
 </html>

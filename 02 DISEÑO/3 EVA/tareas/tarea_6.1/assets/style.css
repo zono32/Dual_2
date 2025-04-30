@@ -1,6 +1,63 @@
-.piano{
-    width: 25%;
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.instrumento-piano{
+
+
+body {
+  font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./instrumentos/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f3e5ab;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    font-family: 'Cinzel', serif;
+  }
+  
+  .instrumentos {
     display: flex;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
