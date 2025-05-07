@@ -1,0 +1,60 @@
+
+.galeria{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.imagen-estilo1:hover{
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+.imagen-estilo2:hover{
+    border-radius: 50px;
+}
+.imagen-estilo1:hover{
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+.imagen-estilo1:hover{
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+.imagen-estilo1:hover{
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+.imagen-estilo1:hover{
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+.imagen-estilo7:hover{
+    filter: contrast(50);
+    transition: filter 0.5s ease;
+}
+.imagen-estilo8:hover{
+    filter: saturation(200%);
+    transition: filter 0.5s ease;
+}
+.imagen-estilo9:hover{
+    filter: saturation(200%);
+    transition: filter 0.5s ease;
+}
+.imagen-estilo10:hover{
+    filter: opacity(30%);
+    transition: filter 0.5s ease;
+}
+.imagen-estilo11:hover{
+    filter: saturation(200%);
+    transition: filter 0.5s ease;
+}
+.imagen-estilo12:hover{
+    filter: hue-rotate(360deg);
+    transition: filter 5s ;
+}
+.imagen-estilo13:hover{
+    transform:rotate(360deg);
+    transition: transform 5s ;
+}
+.imagen-estilo14:hover{
+    filter:grayscale();
+}
