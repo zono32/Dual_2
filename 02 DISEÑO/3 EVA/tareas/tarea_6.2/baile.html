@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Estilos de Baile</title>
-  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 <body>
   <header>
@@ -16,12 +16,14 @@
     <section class="baile salsa">
       <h2>Salsa</h2>
       <figure>
-        <video controls preload="metadata" poster="./assets/media/images/salsa.jpg" width="100%">
-          <source src="./assets/media/videos/salsa.mp4" type="video/mp4">
-          <track src="./assets/media/subtitulos/salsa_es.vtt" kind="subtitles" srclang="es" label="Español" default>
-          <track src="./assets/media/subtitulos/salsa_en.vtt" kind="subtitles" srclang="en" label="English">
-          Tu navegador no soporta la reproducción de vídeos.
-        </video>
+        <div class="video-container container-salsa">
+          <video controls preload="metadata" poster="./assets/media/images/salsa.jpg" width="100%">
+            <source src="./assets/media/videos/salsa.mp4" type="video/mp4">
+            <track src="./assets/media/subtitulos/salsa_es.vtt" kind="subtitles" srclang="es" label="Español" default>
+            <track src="./assets/media/subtitulos/salsa_en.vtt" kind="subtitles" srclang="en" label="English">
+            Tu navegador no soporta la reproducción de vídeos.
+          </video>
+        </div>
         <figcaption>Clase introductoria al baile Salsa.</figcaption>
       </figure>
       <div class="transcripcion">
@@ -34,13 +36,15 @@
 
     <section class="baile tango">
       <h2>Tango</h2>
-      <figure>        
-        <video controls preload="metadata" poster="./assets/media/images/tango.webp" width="100%">
-          <source src="./assets/media/videos/tango.mp4" type="video/mp4">
-          <track src="./assets/media/subtitulos/tango_es.vtt" kind="subtitles" srclang="es" label="Español" default>
-          <track src="./assets/media/subtitulos/tango_en.vtt" kind="subtitles" srclang="en" label="English">
-          Tu navegador no soporta la reproducción de vídeos.
-        </video>
+      <figure>
+        <div class="video-container container-tango">
+          <video controls preload="metadata" poster="./assets/media/images/tango.webp" width="100%">
+            <source src="./assets/media/videos/tango.mp4" type="video/mp4">
+            <track src="./assets/media/subtitulos/tango_es.vtt" kind="subtitles" srclang="es" label="Español" default>
+            <track src="./assets/media/subtitulos/tango_en.vtt" kind="subtitles" srclang="en" label="English">
+            Tu navegador no soporta la reproducción de vídeos.
+          </video>
+        </div>
         <figcaption>Introducción al Tango tradicional.</figcaption>
       </figure>
       <div class="transcripcion">
@@ -51,15 +55,17 @@
       </div>
     </section>
 
-    <section class="baile hiphop">
+    <section class="baile hiphop ">
       <h2>Hip Hop</h2>
       <figure>
-        <video controls preload="metadata" poster="./assets/media/images/hip-hop.jpg" width="100%">
-          <source src="./assets/media/videos/hip-hop.mp4" type="video/mp4">
-          <track src="./assets/media/subtitulos/hiphop_es.vtt" kind="subtitles" srclang="es" label="Español" default> 
-          <track src="./assets/media/subtitulos/hiphop_en.vtt" kind="subtitles" srclang="en" label="English">
-          Tu navegador no soporta la reproducción de vídeos.
-        </video>
+        <div class="video-container container-hiphop">
+          <video controls preload="metadata" poster="./assets/media/images/hip-hop.webp" width="100%">
+            <source src="./assets/media/videos/hip-hop.mp4" type="video/mp4">
+            <track src="./assets/media/subtitulos/hiphop_es.vtt" kind="subtitles" srclang="es" label="Español" default>
+            <track src="./assets/media/subtitulos/hiphop_en.vtt" kind="subtitles" srclang="en" label="English">
+            Tu navegador no soporta la reproducción de vídeos.
+          </video>
+        </div>
         <figcaption>Movimientos básicos de Hip Hop.</figcaption>
       </figure>
       <div class="transcripcion">
