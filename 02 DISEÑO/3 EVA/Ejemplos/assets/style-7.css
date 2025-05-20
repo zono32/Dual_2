@@ -22,13 +22,13 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  
 }
 
 .girar {
   background-color: violet;
   animation: girar 2s linear infinite;
 }
-
 @keyframes girar {
   from {
     transform: rotate(0deg);
@@ -37,11 +37,11 @@ body {
     transform: rotate(360deg);
   }
 }
+
 .latido {
   background-color: lightcoral;
   animation: latido 1s linear infinite;
 }
-
 @keyframes latido {
   0%,
   100% {
@@ -51,11 +51,11 @@ body {
     transform: scale(1.2);
   }
 }
+
 .parpadeo {
   background-color: black;
   animation: parpadeo 2s linear infinite;
 }
-
 @keyframes parpadeo {
   0%,
   100% {
@@ -65,11 +65,11 @@ body {
     opacity: 0;
   }
 }
+
 .horizontal {
   background-color: orange;
   animation: horizontal 2s ease-in-out infinite alternate;
 }
-
 @keyframes horizontal {
   from {
     transform: translateX(0);
@@ -78,13 +78,13 @@ body {
     transform: translateX(50px);
   }
 }
+
 .fondo-scroll {
   background-image: url(../media/imagenes/nuves.jpg);
   background-size: cover;
   background-position: center;
   animation: fondo-scroll 5s linear infinite;
 }
-
 @keyframes fondo-scroll {
   0% {
     background-position: 0 0;
@@ -93,11 +93,11 @@ body {
     background-position: -100px 0;
   }
 }
+
 .loader {
   background-color: green;
   animation: loader 1.2s ease-in-out infinite;
 }
-
 @keyframes loader {
   0% {
     transform: scale(0); opacity: 0 ;
