@@ -1,0 +1,50 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s; /* Se puede poner en el estado normal */
+}
+
+.tj1 {
+    background-color: #3398D9;
+    border: 5px solid #2980B9;
+}
+
+.tj2 {
+    background-color: #E84C3C;
+    border: 5px solid #C0392B;
+}
+
+.tj3 {
+    background-color: #F39B12;
+    border: 5px solid #E67E22;
+}
+
+.tj1:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+    background-color: #2ECA75;
+}
+
+.tj2:hover {
+    transform: rotate(10deg);
+    border: 5px dashed #532bc0;
+}
+
+.tj3:hover {
+    transform: translateX(20px);
+    opacity: 0.8;
+}
