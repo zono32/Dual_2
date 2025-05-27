@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'Satisfy';
+    src: url(../fonts/Satisfy-Regular.ttf) format(truetype);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
+    background-image: url(../img/fondo.jpg);   
+    color:black;
+    text-align: center;
+}
+header{
+    background-color:#30dfce ;
+    padding: 2px;
+}
+footer{
+    background-color:#30dfce ;
+    padding: 5px;  
+     
+}
+h1{
+    font-size: 34px;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 24px;
+}
+.video-section{
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem auto;max-width: max-content;
+    background-color: #30dfce;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video{
+    border-radius: 10px;
+    min-width: 640px;
+    max-width: 640px;
+     
+}
+figcaption{
+    font-size: 20px;
+    max-width: 400px;
+}
+
+
